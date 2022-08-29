@@ -1,0 +1,21 @@
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\bin\Debug\net6.0-windows\Diet App.exe
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\bin\Debug\net6.0-windows\Diet App.deps.json
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\bin\Debug\net6.0-windows\Diet App.runtimeconfig.json
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\bin\Debug\net6.0-windows\Diet App.dll
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\bin\Debug\net6.0-windows\Diet App.pdb
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App.csproj.AssemblyReference.cache
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App_MarkupCompile.cache
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App_MarkupCompile.lref
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App.g.resources
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App.AssemblyInfoInputs.cache
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App.AssemblyInfo.cs
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App.csproj.CoreCompileInputs.cache
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App.dll
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\refint\Diet App.dll
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App.pdb
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\Diet App.genruntimeconfig.cache
+C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\Diet App\obj\Debug\net6.0-windows\ref\Diet App.dll
