@@ -1,5 +1,0 @@
-C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\DietAppTests\obj\Debug\net6.0\DietAppTests.csproj.AssemblyReference.cache
-C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\DietAppTests\obj\Debug\net6.0\DietAppTests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\DietAppTests\obj\Debug\net6.0\DietAppTests.AssemblyInfoInputs.cache
-C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\DietAppTests\obj\Debug\net6.0\DietAppTests.AssemblyInfo.cs
-C:\Users\Jeremy\source\repos\WPF-Diet-App\Diet App\DietAppTests\obj\Debug\net6.0\DietAppTests.csproj.CoreCompileInputs.cache
