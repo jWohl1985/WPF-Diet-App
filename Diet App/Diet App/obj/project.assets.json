@@ -1870,9 +1870,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jeremy\\source\\repos\\WPF-Diet-App\\Diet App\\Diet App\\Diet App.csproj",
-      "projectName": "Diet App",
-      "projectPath": "C:\\Users\\Jeremy\\source\\repos\\WPF-Diet-App\\Diet App\\Diet App\\Diet App.csproj",
+      "projectUniqueName": "C:\\Users\\Jeremy\\source\\repos\\WPF-Diet-App\\Diet App\\Diet App\\DietApp.csproj",
+      "projectName": "DietApp",
+      "projectPath": "C:\\Users\\Jeremy\\source\\repos\\WPF-Diet-App\\Diet App\\Diet App\\DietApp.csproj",
       "packagesPath": "C:\\Users\\Jeremy\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Jeremy\\source\\repos\\WPF-Diet-App\\Diet App\\Diet App\\obj\\",
       "projectStyle": "PackageReference",

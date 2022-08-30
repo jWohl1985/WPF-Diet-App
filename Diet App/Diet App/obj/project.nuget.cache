@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lkWCWqOo3TgSWqKynixCY9uB27DfBUpS+ld4638AbswV7hC22oirhOP0JAdHQ1ii0cpO2EIiivt/gK6eM1gEvA==",
+  "dgSpecHash": "K2GxYcX4PYmMEwmZpxtb7KwsfFCCjOpgVCR5wKBp7wB1b/Nrs7L6WuuXpw4lly+yd0NzG3jmIJMyolBWkbUaGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jeremy\\source\\repos\\WPF-Diet-App\\Diet App\\Diet App\\Diet App.csproj",
+  "projectFilePath": "C:\\Users\\Jeremy\\source\\repos\\WPF-Diet-App\\Diet App\\Diet App\\DietApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jeremy\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Jeremy\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
