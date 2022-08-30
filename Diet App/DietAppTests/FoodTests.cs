@@ -4,27 +4,27 @@ namespace DietAppTests
 {
     public class FoodTests
     {
-        int decimalPlaceAccuracy = 2;
+        private int decimalPlaceAccuracy = 2;
 
         [Fact]
         public void Constructs_a_new_food()
         {
             // Arrange
-            string expectedName = "Protein Shake";
-            float expectedCalories = 110;
-            float expectedProtein = 24.5f;
-            float expectedCarbs = 4;
-            float expectedFat = 1;
+            string name = "Protein Shake";
+            float calories = 110;
+            float protein = 24.5f;
+            float carbs = 4;
+            float fat = 1;
 
             // Act
-            Food sut = new Food(expectedName, expectedCalories, expectedProtein, expectedCarbs, expectedFat);
+            Food sut = new Food(name, calories, protein, carbs, fat);
 
             // Assert
-            Assert.Equal(expectedName, sut.Name);
-            Assert.Equal(expectedCalories, sut.Calories, decimalPlaceAccuracy);
-            Assert.Equal(expectedProtein, sut.Protein, decimalPlaceAccuracy);
-            Assert.Equal(expectedCarbs, sut.Carbs, decimalPlaceAccuracy);
-            Assert.Equal(expectedFat, sut.Fat, decimalPlaceAccuracy);
+            Assert.Equal(name, sut.Name);
+            Assert.Equal(calories, sut.Calories, decimalPlaceAccuracy);
+            Assert.Equal(protein, sut.Protein, decimalPlaceAccuracy);
+            Assert.Equal(carbs, sut.Carbs, decimalPlaceAccuracy);
+            Assert.Equal(fat, sut.Fat, decimalPlaceAccuracy);
         }
     }
 }

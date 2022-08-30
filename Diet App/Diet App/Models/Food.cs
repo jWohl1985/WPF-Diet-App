@@ -16,11 +16,11 @@ namespace DietApp.Models
 
         public Food(string name, float calories, float protein, float carbs, float fat)
         {
-            Name = name;
-            Calories = calories;
-            Protein = protein;
-            Carbs = carbs;
-            Fat = fat;
+            this.Name = name;
+            this.Calories = calories;
+            this.Protein = protein;
+            this.Carbs = carbs;
+            this.Fat = fat;
         }
     }
 }
