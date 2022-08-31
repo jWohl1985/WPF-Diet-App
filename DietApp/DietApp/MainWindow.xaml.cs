@@ -12,17 +12,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DietApp.Models;
+using DietApp.ViewModels;
 
 namespace Diet_App
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private DietContext context;
+        public TestViewModel Test { get; set; }
+        
+        public MainWindow(DietContext context)
         {
             InitializeComponent();
+            this.context = context;
+            Test = new TestViewModel(context.Users.Find(1), context.Foods.Find(1), context.Meals.Find(1));
+            this.DataContext = this;
         }
     }
 }
