@@ -8,16 +8,21 @@ namespace DietApp.Models
 {
     public class User
     {
-        public string Name { get; private set; }
-        public int Age { get; private set; }
-        public float WeightInLbs { get; private set; }
-        public int HeightFeetComponent { get; private set; }
-        public float HeightInchComponent { get; private set; }
+        // Entity relationships
+        public int UserId { get; set; }
+        public BodyMeasurements Measurements { get; set; }
+        public ICollection<Meal> Meals { get; set; }
+
+        // User properties
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public float WeightInLbs { get; set; }
+        public int HeightFeetComponent { get; set; }
+        public float HeightInchComponent { get; set; }
         public float HeightInInches => (HeightFeetComponent * 12) + HeightInchComponent;
-        public int HoursExercisePerWeek { get; private set; }
-        public Sex Sex { get; private set; }
-        public Goal Goal { get; private set; }
-        public BodyMeasurements Measurements { get; private set; }
+        public int HoursExercisePerWeek { get; set; }
+        public Sex Sex { get; set; }
+        public Goal Goal { get; set; }
 
         public User(string name, int age, float weightInLbs, int heightFeetComponent, float heightInchComponent,
             int hoursExercisePerWeek, Sex sex, Goal goal, BodyMeasurements measurements)
@@ -31,6 +36,11 @@ namespace DietApp.Models
             this.Sex = sex;
             this.Goal = goal;
             this.Measurements = measurements;
+        }
+
+        public User()
+        {
+
         }
     }
 }
