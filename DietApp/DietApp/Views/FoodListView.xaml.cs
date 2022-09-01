@@ -12,20 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using DietApp.Models;
-using DietApp.ViewModels;
 
-namespace DietApp
+namespace DietApp.Views
 {
-    public partial class MainWindow : Window
-    {   
-        public MainViewModel MainViewModel { get; set; }
-
-        public MainWindow(DietContext context)
+    /// <summary>
+    /// Interaction logic for FoodDatabaseView.xaml
+    /// </summary>
+    public partial class FoodListView : UserControl
+    {
+        public FoodListView()
         {
             InitializeComponent();
-            PersistentData.Context = context;
-            this.DataContext = new MainViewModel();
         }
     }
 }

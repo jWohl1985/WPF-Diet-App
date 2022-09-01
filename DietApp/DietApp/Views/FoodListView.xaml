@@ -1,0 +1,115 @@
+﻿<UserControl x:Class="DietApp.Views.FoodListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DietApp.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="610" d:DesignWidth="510">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1">
+                
+            <Border BorderBrush="Gray">
+            
+                <ListView ItemsSource="{Binding FoodDatabase}"
+                      MinWidth="500"
+                      MinHeight="500">
+                
+                    <ListView.View>
+
+                        <GridView AllowsColumnReorder="false" 
+                              ColumnHeaderToolTip="Food Information">
+
+                            <GridViewColumn 
+                                DisplayMemberBinding="{Binding Path=Name}" 
+                                Header="Food Name"
+                                Width="100"/>
+
+                            <GridViewColumn 
+                                DisplayMemberBinding="{Binding Path=Calories}"
+                                Header="Calories"
+                                Width="100"/>
+
+                            <GridViewColumn 
+                                DisplayMemberBinding="{Binding Path=Protein}"
+                                Header="Protein"
+                                Width="100"/>
+
+                            <GridViewColumn 
+                                DisplayMemberBinding="{Binding Path=Carbs}"
+                                Header="Carbs"
+                                Width="100"/>
+
+                            <GridViewColumn 
+                                DisplayMemberBinding="{Binding Path=Fat}"
+                                Header="Fat"
+                                Width="100"/>
+                        
+                        </GridView>
+
+                    </ListView.View>
+                </ListView>
+                
+            </Border>
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+
+                <StackPanel>
+
+                    <Button Content="Add A Food"
+                        Width="100"
+                        Margin="10 10 0 0"
+                        Command="{Binding AddFoodCommand}"/>
+
+                    <Button Content="Delete Selected"
+                        Width="100"
+                        Margin="10 10 0 0"
+                        Command="{Binding DeleteFoodCommand}"/>
+
+                </StackPanel>
+
+                <StackPanel>
+
+                    <Button Content="Import Database"
+                        Width="100"
+                        Margin="10 10 0 0"
+                        Command="{Binding ImportDatabaseCommand}"/>
+
+                    <Button Content="Export Database"
+                        Width="100"
+                        Margin="10 10 0 0"
+                        Command="{Binding ExportDatabaseCommand}"/>
+
+                </StackPanel>
+
+                <StackPanel>
+                    
+                    <Button Content="Delete Database"
+                        Width="100"
+                        Height="20"
+                        Margin="10 10 0 0"
+                        Command="{Binding DeleteDatabaseCommand}"/>
+                    
+                </StackPanel>
+                
+            </StackPanel>
+            
+        </StackPanel>
+        
+    </Grid>
+    
+</UserControl>

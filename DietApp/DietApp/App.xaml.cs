@@ -10,8 +10,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Configuration;
+using DietApp.ViewModels;
 
-namespace Diet_App
+namespace DietApp
 {
     public partial class App : Application
     {
