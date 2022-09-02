@@ -48,6 +48,18 @@ namespace DietApp.Models
                     HoursExercisePerWeek = 3,
                     Sex = Sex.Male,
                     Goal = Goal.LoseWeight,
+                },
+                new User
+                {
+                    UserId = 2,
+                    Name = "Jane",
+                    Age = 42,
+                    WeightInLbs = 180,
+                    HeightFeetComponent = 5,
+                    HeightInchComponent = 6,
+                    HoursExercisePerWeek = 0,
+                    Sex = Sex.Female,
+                    Goal = Goal.LoseWeight,
                 });
 
             modelBuilder.Entity<BodyMeasurements>().HasData(
@@ -58,6 +70,14 @@ namespace DietApp.Models
                     Neck = 13.5f,
                     Waist = 34.75f,
                     Hips = 36.2f,
+                },
+                new BodyMeasurements
+                {
+                    UserId = 2,
+                    BodyMeasurementsId = 2,
+                    Neck = 15,
+                    Waist = 42,
+                    Hips = 41,
                 });
 
             modelBuilder.Entity<Food>().HasData(
