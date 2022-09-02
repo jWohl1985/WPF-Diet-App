@@ -6,13 +6,18 @@
         xmlns:local="clr-namespace:DietApp"
         xmlns:views="clr-namespace:DietApp.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="650" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <views:FoodListView DataContext="{Binding FoodList}"/>
-
+        <StackPanel Orientation="Horizontal">
+            <views:UserListView DataContext="{Binding UserList}"/>
+            <views:FoodListView DataContext="{Binding FoodList}"/>
+            <views:MealPlanView DataContext="{Binding MealPlan}"/>
+        </StackPanel>
+        
     </Grid>
+    
 </Window>

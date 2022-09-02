@@ -17,7 +17,6 @@ namespace DietApp
     public partial class App : Application
     {
         private ServiceProvider serviceProvider;
-        private IConfiguration configuration;
 
         public App()
         {
