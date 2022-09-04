@@ -13,12 +13,14 @@ namespace DietApp.ViewModels
         public DayOfWeek DayOfWeek => MealPlan.SelectedDay;
 
         public UserListViewModel UserList { get; set; }
+        public WeightLogViewModel WeightLog { get; set; }
         public FoodListViewModel FoodList { get; set; }
         public MealPlanViewModel MealPlan { get; set; }
 
         public MainViewModel()
         {
             UserList = new UserListViewModel();
+            WeightLog = new WeightLogViewModel(UserList);
             FoodList = new FoodListViewModel();
             MealPlan = new MealPlanViewModel(UserList);
         }

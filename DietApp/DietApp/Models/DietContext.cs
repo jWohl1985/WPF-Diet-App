@@ -15,6 +15,7 @@ namespace DietApp.Models
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<WeightLogEntry> WeightLogs { get; set; }
         public DbSet<Food> Foods { get; set; }
         public DbSet<Meal> Meals { get; set; }
 
@@ -78,6 +79,36 @@ namespace DietApp.Models
                     Neck = 15,
                     Waist = 42,
                     Hips = 41,
+                });
+
+            modelBuilder.Entity<WeightLogEntry>().HasData(
+                new WeightLogEntry
+                {
+                    UserId = 1,
+                    WeightLogEntryId = 1,
+                    WeightRecordedInLbs = 160.0f,
+                    DateRecorded = new DateOnly(2022, 03, 22),
+                },
+                new WeightLogEntry
+                {
+                    UserId = 1,
+                    WeightLogEntryId = 2,
+                    WeightRecordedInLbs = 159.8f,
+                    DateRecorded = new DateOnly(2022, 03, 23),
+                },
+                new WeightLogEntry
+                {
+                    UserId = 2,
+                    WeightLogEntryId = 3,
+                    WeightRecordedInLbs = 160.0f,
+                    DateRecorded = new DateOnly(2022, 03, 22),
+                },
+                new WeightLogEntry
+                {
+                    UserId = 2,
+                    WeightLogEntryId = 4,
+                    WeightRecordedInLbs = 159.8f,
+                    DateRecorded = new DateOnly(2022, 03, 23),
                 });
 
             modelBuilder.Entity<Food>().HasData(

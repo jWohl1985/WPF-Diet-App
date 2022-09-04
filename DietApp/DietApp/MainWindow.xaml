@@ -13,7 +13,11 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal">
-            <views:UserListView DataContext="{Binding UserList}"/>
+            <StackPanel>
+                <views:UserListView DataContext="{Binding UserList}"/>
+                <views:WeightLogView DataContext="{Binding WeightLog}"/>
+            </StackPanel>
+            
             <views:FoodListView DataContext="{Binding FoodList}"/>
             <views:MealPlanView DataContext="{Binding MealPlan}"/>
         </StackPanel>

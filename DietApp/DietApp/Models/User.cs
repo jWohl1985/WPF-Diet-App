@@ -11,6 +11,7 @@ namespace DietApp.Models
         // Entity relationships
         public int UserId { get; set; }
         public BodyMeasurements Measurements { get; set; }
+        public ICollection<WeightLogEntry> WeightLog { get; set; }
         public ICollection<Meal> Meals { get; set; }
 
         // User properties
