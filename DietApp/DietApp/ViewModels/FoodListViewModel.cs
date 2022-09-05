@@ -21,7 +21,7 @@ namespace DietApp.ViewModels
         public ICommand DeleteFoodCommand { get; set; }
         public ICommand ImportDatabaseCommand { get; set; }
         public ICommand ExportDatabaseCommand { get; set; }
-        public ICommand DeleteDatabaseCommand { get; set; }
+        public ICommand DeleteAllFoodCommand { get; set; }
         public Food SelectedFood 
         {
             get => selectedFood;
@@ -43,6 +43,7 @@ namespace DietApp.ViewModels
 
             AddFoodCommand = new AddFoodCommand(this);
             DeleteFoodCommand = new DeleteFoodCommand(this);
+            DeleteAllFoodCommand = new DeleteAllFoodCommand(this);
         }
     }
 }
