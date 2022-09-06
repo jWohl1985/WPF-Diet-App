@@ -14,12 +14,12 @@
 
         <StackPanel Orientation="Horizontal">
             <StackPanel>
-                <views:UserListView DataContext="{Binding UserList}"/>
-                <views:WeightLogView DataContext="{Binding WeightLog}"/>
+                <views:UserListView DataContext="{Binding Users}"/>
+                <views:WeightLogView DataContext="{Binding Weights}"/>
             </StackPanel>
             
-            <views:FoodListView DataContext="{Binding FoodList}"/>
-            <views:MealPlanView DataContext="{Binding MealPlan}"/>
+            <views:FoodListView DataContext="{Binding Foods}"/>
+            <views:MealPlanView DataContext="{Binding Meals}"/>
         </StackPanel>
         
     </Grid>

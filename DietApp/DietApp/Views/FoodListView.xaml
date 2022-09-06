@@ -104,7 +104,13 @@
                         Height="20"
                         Margin="10 10 0 0"
                         Command="{Binding DeleteAllFoodCommand}"/>
-                    
+
+                    <Button Content="Add To Meals"
+                        Width="100"
+                        Height="20"
+                        Margin="10 10 0 0"
+                        Command="{Binding AddToMealsCommand}"/>
+
                 </StackPanel>
                 
             </StackPanel>

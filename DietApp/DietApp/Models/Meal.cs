@@ -19,16 +19,5 @@ namespace DietApp.Models
         public float Servings { get; set; }
         public DayOfWeek DayOfWeek { get; set; }
 
-        public Meal(float servings, Food food, DayOfWeek dayOfWeek)
-        {
-            this.Servings = servings;
-            this.Food = food;
-            this.DayOfWeek = dayOfWeek;
-        }
-
-        public Meal()
-        {
-
-        }
     }
 }

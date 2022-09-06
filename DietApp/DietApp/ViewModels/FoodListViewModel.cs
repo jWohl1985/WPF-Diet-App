@@ -15,6 +15,7 @@ namespace DietApp.ViewModels
     public class FoodListViewModel : ViewModelBase
     {
         private Food selectedFood;
+        private MainViewModel mainViewModel;
 
         public ObservableCollection<Food> FoodDatabase { get; private set; }
         public ICommand AddFoodCommand { get; set; }
@@ -22,6 +23,8 @@ namespace DietApp.ViewModels
         public ICommand ImportDatabaseCommand { get; set; }
         public ICommand ExportDatabaseCommand { get; set; }
         public ICommand DeleteAllFoodCommand { get; set; }
+        public ICommand AddToMealsCommand { get; set; }
+
         public Food SelectedFood 
         {
             get => selectedFood;
@@ -32,8 +35,10 @@ namespace DietApp.ViewModels
             }
         }
 
-        public FoodListViewModel()
+        public FoodListViewModel(MainViewModel mainViewModel)
         {
+            this.mainViewModel = mainViewModel;
+
             FoodDatabase = new ObservableCollection<Food>();
             List<Food> foods = PersistentData.Context.Foods.ToList();
             foreach (Food food in foods)
@@ -44,6 +49,7 @@ namespace DietApp.ViewModels
             AddFoodCommand = new AddFoodCommand(this);
             DeleteFoodCommand = new DeleteFoodCommand(this);
             DeleteAllFoodCommand = new DeleteAllFoodCommand(this);
+            AddToMealsCommand = new AddToMealsCommand(mainViewModel, this);
         }
     }
 }

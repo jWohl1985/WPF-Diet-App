@@ -10,10 +10,10 @@ namespace DietApp.ViewModels
 {
     public class MealPlanViewModel : ViewModelBase
     {
-        private UserListViewModel userListVM;
+        private MainViewModel mainViewModel;
         private DayOfWeek selectedDay;
 
-        public User SelectedUser => userListVM.SelectedUser;
+        public User SelectedUser => mainViewModel.Users.SelectedUser;
         public ObservableCollection<Meal> MealPlan { get; set; }
         public DayOfWeek SelectedDay 
         {
@@ -25,11 +25,11 @@ namespace DietApp.ViewModels
             }
         }
 
-        public MealPlanViewModel(UserListViewModel userListVM)
+        public MealPlanViewModel(MainViewModel mainViewModel)
         {
+            this.mainViewModel = mainViewModel;
             MealPlan = new ObservableCollection<Meal>();
-            this.userListVM = userListVM;
-            this.userListVM.UserChanged += OnUserChanged;
+            mainViewModel.Users.UserChanged += OnUserChanged;
             SelectedDay = DateTime.Today.DayOfWeek;
             UpdateDisplayedMeals();
         }
